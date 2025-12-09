@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="../images/logo.png" alt="Gaming Hub logo" />
+            <h1>Gaming Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#game-library">Game Library</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="faq-page">
+        <div id="title_section">
+            <img src="images/confused_cat.jpg" alt="confused cat guy">
+            <h1>Frequently Asked Questions</h1>
+            <img src="images/confused_guy.png" alt="confused human guy">
+        </div>
+
+        <button type="button" class="collapsible">My game isn't listed!</button>
+        <div class="content">
+            <p>Send us an email and we'll add it.</p>
+        </div>
+
+        <button type="button" class="collapsible">How do I set up crossplay for [game]?</button>
+        <div class="content">
+            <p>Many games allow hosting private or dedicated servers. Sometimes, this comes with the benefit of allowing
+                crossplay.</p>
+        </div>
+
+        <button type="button" class="collapsible">How do I set up a server for [game]?</button>
+        <div class="content">
+            <p>Some games come with launchers for dedicated servers. Server hosting services can also be found online.
+            </p>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+    </main>
+
+</body>
+
+<footer>
+  <span>© 2025 Gaming Hub</span>
+  <span>Home&nbsp;&nbsp;Back to Top</span>
+</footer>
+
+</html>

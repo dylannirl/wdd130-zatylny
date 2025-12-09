@@ -190,3 +190,62 @@ footer nav a:hover {
     text-align: center;
   }
 }
+
+/* --------------------- FAQ Section ----------------------- */
+
+#title_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 30px;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+.collapsible {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #09809D;
+  margin-top: 60px;
+  color: white;
+  cursor: pointer;
+  padding: 14px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-color: #00a0b5;
+}
+
+.active, .collapsible:hover {
+  background-color: #09809D;
+}
+
+.content {
+  padding: 16px 20px 18px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #0d5267;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  display: none;
+  overflow: hidden;
+  background-color: #004159;
+}
+
+.collapsible::after {
+  content: "▾";
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #033447;
+  border-top: 2px solid #04a6c2;
+  padding: 14px 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
